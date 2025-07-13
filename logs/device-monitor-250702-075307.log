@@ -1,0 +1,567 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x4bc
+load:0x403c9700,len:0xbd8
+load:0x403cc700,len:0x2a0c
+entry 0x403c98d0
+[   187][I][main.cpp:35] setup(): [Main] Initializing Astra Baby Incubator...
+[   194][I][main.cpp:36] setup(): [Main] Firmware version: v 1.0.0
+[   200][I][esp32-hal-i2c.c:75] i2cInit(): Initialising I2C Master: sda=42 scl=41 freq=100000
+[   209][W][Wire.cpp:301] begin(): Bus already started in Master Mode.
+[   216][I][ASTRA_BabyIncubator.cpp:125] _initStorage(): [ASTRA_BabyIncubator] Initializing NVS storage...
+[   225][I][ASTRA_BabyIncubator.cpp:133] _initStorage(): [ASTRA_BabyIncubator] Reading configuration from NVS...
+[   247][I][ASTRA_BabyIncubator.cpp:155] _initStorage(): [ASTRA_BabyIncubator] Air temperature setpoint: 32.00
+[   257][I][ASTRA_BabyIncubator.cpp:156] _initStorage(): [ASTRA_BabyIncubator] Skin temperature setpoint: 31.00
+[   267][I][ASTRA_BabyIncubator.cpp:157] _initStorage(): [ASTRA_BabyIncubator] Humidity setpoint: 75.00
+[   276][I][ASTRA_BabyIncubator.cpp:158] _initStorage(): [ASTRA_BabyIncubator] Air temperature offset: 0.00
+[   285][I][ASTRA_BabyIncubator.cpp:159] _initStorage(): [ASTRA_BabyIncubator] Skin temperature offset: 0.00
+[   295][I][ASTRA_BabyIncubator.cpp:160] _initStorage(): [ASTRA_BabyIncubator] Humidity offset: 0.00
+[   304][I][ASTRA_BabyIncubator.cpp:161] _initStorage(): [ASTRA_BabyIncubator] Logo(asset ID): 4
+[   313][I][ASTRA_BabyIncubator.cpp:162] _initStorage(): [ASTRA_BabyIncubator] Reading configuration from NVS done.
+[   323][I][ASTRA_BabyIncubator.cpp:168] _initPeripherals(): [ASTRA_BabyIncubator] Initializing peripherals...
+[   419][W][esp32-hal-timer.c:226] timerAttachInterruptFlag(): EDGE timer interrupt is not supported! Setting to LEVEL...
+[   432][I][ASTRA_BabyIncubator.cpp:386] startAirMode(): [ASTRA_BabyIncubator] Starting air mode. Setpoint: 32.00
+[   443][W][ASTRA_BabyIncubator.cpp:460] _stopControl(): [ASTRA_BabyIncubator] Stopping failed. Baby Mode is already stopped
+[   454][I][ASTRA_BabyIncubatorHMI.cpp:202] begin(): [HMI] Initializing Astra Baby Incubator HMI...
+[   523][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[  5599][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 10111][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: unlock
+[ 10648][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 11551][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: unmute
+[ 12389][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: mute
+[ 13078][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: lock
+[ 13607][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: unlock
+[ 14358][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: lock
+[ 14928][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: unlock
+[ 15697][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 18017][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: m air
+[ 19046][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: lock
+[ 19585][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: unlock
+[ 20305][I][ASTRA_BabyIncubatorHMI.cpp:314] listenCommand(): [HMI] Received command: lock
+[ 20746][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 25795][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 30844][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.61, error: -3.39}
+[ 35893][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 40942][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.61, error: -3.39}
+[ 45991][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 51040][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.61, error: -3.39}
+[ 56117][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.61, error: -3.39}
+[ 61167][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.61, error: -3.39}
+[ 66216][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 71265][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 76314][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[ 81363][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[ 86412][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.68, error: -3.32}
+[ 91461][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[ 96510][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[101559][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[106627][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[111676][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[116725][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.74, error: -3.26}
+[121774][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.81, error: -3.19}
+[126823][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.81, error: -3.19}
+[131872][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.81, error: -3.19}
+[136921][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.88, error: -3.12}
+[141970][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.88, error: -3.12}
+[147019][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.88, error: -3.12}
+[152068][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.88, error: -3.12}
+[157117][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.88, error: -3.12}
+[162166][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.95, error: -3.05}
+[167241][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.95, error: -3.05}
+[172290][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.95, error: -3.05}
+[177339][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 28.95, error: -3.05}
+[182388][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.02, error: -2.98}
+[187437][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.02, error: -2.98}
+[192486][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.02, error: -2.98}
+[197535][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.02, error: -2.98}
+[202584][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.09, error: -2.91}
+[207633][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.09, error: -2.91}
+[212712][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.16, error: -2.84}
+[217761][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.16, error: -2.84}
+[222810][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.22, error: -2.78}
+[227859][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.22, error: -2.78}
+[232908][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.22, error: -2.78}
+[237957][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.22, error: -2.78}
+[243006][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.29, error: -2.71}
+[248055][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.29, error: -2.71}
+[253104][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.36, error: -2.64}
+[258153][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.36, error: -2.64}
+[263211][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.36, error: -2.64}
+[268260][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.36, error: -2.64}
+[273334][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.43, error: -2.57}
+[278383][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.43, error: -2.57}
+[283432][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 29.50, error: -2.50}
+[288481][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 81, input: 29.57, error: -2.43}
+[293530][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 100, fan: 90, input: 29.57, error: -2.43}
+[298579][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 100, fan: 90, input: 29.57, error: -2.43}
+[303628][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 81, input: 29.63, error: -2.37}
+[308702][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 100, fan: 90, input: 29.63, error: -2.37}
+[313751][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 100, fan: 90, input: 29.63, error: -2.37}
+[318814][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 71, input: 29.77, error: -2.23}
+[323863][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 100, fan: 90, input: 29.70, error: -2.30}
+[328912][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 81, input: 29.77, error: -2.23}
+[333961][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 80, input: 29.84, error: -2.16}
+[339010][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 79, input: 29.91, error: -2.09}
+[344059][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 88, input: 29.91, error: -2.09}
+[349108][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 79, input: 29.98, error: -2.02}
+[354157][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 88, input: 29.98, error: -2.02}
+[359206][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 88, input: 29.98, error: -2.02}
+[364255][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 79, input: 30.05, error: -1.95}
+[369304][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 78, input: 30.11, error: -1.89}
+[374353][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 87, input: 30.11, error: -1.89}
+[379402][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 87, input: 30.11, error: -1.89}
+[384479][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 77, input: 30.18, error: -1.82}
+[389528][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 76, input: 30.25, error: -1.75}
+[394577][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 86, input: 30.25, error: -1.75}
+[399626][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 76, input: 30.32, error: -1.68}
+[404675][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 90, fan: 85, input: 30.32, error: -1.68}
+[409724][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 75, input: 30.39, error: -1.61}
+[414773][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 74, input: 30.46, error: -1.54}
+[419844][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 83, input: 30.46, error: -1.54}
+[424901][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 73, input: 30.52, error: -1.48}
+[429950][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 82, input: 30.52, error: -1.48}
+[434999][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 73, input: 30.59, error: -1.41}
+[440048][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 82, input: 30.59, error: -1.41}
+[445097][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 72, input: 30.66, error: -1.34}
+[450146][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 71, input: 30.73, error: -1.27}
+[455195][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 80, input: 30.73, error: -1.27}
+[460244][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 70, input: 30.80, error: -1.20}
+[465293][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 79, input: 30.80, error: -1.20}
+[470342][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 69, input: 30.87, error: -1.13}
+[475391][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 78, input: 30.87, error: -1.13}
+[480440][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 80, fan: 78, input: 30.87, error: -1.13}
+[485509][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 68, input: 30.94, error: -1.06}
+[490558][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 77, input: 30.94, error: -1.06}
+[495607][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.07, error: -0.93}
+[500656][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 75, input: 31.07, error: -0.93}
+[505705][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 65, input: 31.14, error: -0.86}
+[510754][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 74, input: 31.14, error: -0.86}
+[515803][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 74, input: 31.14, error: -0.86}
+[520852][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 64, input: 31.21, error: -0.79}
+[525901][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 70, fan: 73, input: 31.21, error: -0.79}
+[530980][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 63, input: 31.28, error: -0.72}
+[536029][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 62, input: 31.35, error: -0.65}
+[541078][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 71, input: 31.35, error: -0.65}
+[546127][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 71, input: 31.35, error: -0.65}
+[551176][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 61, input: 31.41, error: -0.59}
+[556225][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 70, input: 31.41, error: -0.59}
+[561274][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 60, input: 31.48, error: -0.52}
+[566323][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 68, input: 31.48, error: -0.52}
+[571372][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 68, input: 31.48, error: -0.52}
+[576421][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 31.55, error: -0.45}
+[581470][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.62, error: -0.38}
+[586519][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 66, input: 31.62, error: -0.38}
+[591568][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 56, input: 31.69, error: -0.31}
+[596617][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 65, input: 31.69, error: -0.31}
+[601666][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.76, error: -0.24}
+[606715][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 63, input: 31.76, error: -0.24}
+[611764][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 31.83, error: -0.17}
+[616813][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 62, input: 31.83, error: -0.17}
+[621862][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 52, input: 31.89, error: -0.11}
+[626911][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 50, fan: 61, input: 31.89, error: -0.11}
+[631960][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 51, input: 31.96, error: -0.04}
+[637039][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 59, input: 31.96, error: -0.04}
+[642088][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 32.03, error: 0.03}
+[647137][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 60, fan: 68, input: 31.96, error: -0.04}
+[652186][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 32.03, error: 0.03}
+[657235][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 32.03, error: 0.03}
+[662284][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 32.03, error: 0.03}
+[667333][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 32.10, error: 0.10}
+[672382][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 56, input: 32.10, error: 0.10}
+[677431][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 56, input: 32.10, error: 0.10}
+[682480][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 32.17, error: 0.17}
+[687543][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 32.17, error: 0.17}
+[692592][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 32.24, error: 0.24}
+[697641][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 32.24, error: 0.24}
+[702690][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 32.24, error: 0.24}
+[707739][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[712788][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[717837][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[722886][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[727935][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[732984][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[738033][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[743110][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[748159][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[753208][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[758257][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[763306][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[768355][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[773404][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[778453][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[783502][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[788551][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[793619][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[798668][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[803717][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[808766][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[813815][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[818864][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[823913][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[828962][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[834011][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[839060][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[844109][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[849182][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[854232][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[859281][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[864330][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[869379][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[874428][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[879477][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[884526][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[889575][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[894624][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[899679][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[904728][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[909777][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[914826][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[919875][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[924924][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[929973][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[935022][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[940071][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[945120][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[950169][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[955218][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[960267][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[965316][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[970365][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[975414][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[980463][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[985512][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[990561][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[995610][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1000659][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1005738][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1010787][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1015836][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1020885][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1025934][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1030983][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1036032][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1041081][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1046130][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1051179][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1056228][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1061277][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1066326][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1071375][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1076424][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1081473][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1086522][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1091571][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.78, error: 0.78}
+[1096620][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1101669][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1106718][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1111767][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1116839][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1121888][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1126937][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1131986][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1137035][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1142084][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1147133][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1152182][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1157231][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1162292][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1167341][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1172390][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1177439][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1182488][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1187537][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1192586][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1197635][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1202684][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1207733][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.72, error: 0.72}
+[1212782][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1217831][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1222901][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1227950][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1232999][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1238048][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1243097][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1248146][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1253195][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1258270][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1263319][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1268368][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.65, error: 0.65}
+[1273417][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1278466][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1283515][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1288564][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1293613][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1298662][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1303711][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1308760][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1313809][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1318858][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1323928][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.58, error: 0.58}
+[1328978][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1334027][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1339076][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1344125][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1349174][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1354223][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1359272][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1364321][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.51, error: 0.51}
+[1369370][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1374448][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1379497][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1384546][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1389595][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1394644][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1399693][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1404742][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1409801][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1414850][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1419899][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1424948][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1430026][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1435075][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1440124][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.44, error: 0.44}
+[1445173][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1450222][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1455271][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1460320][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1465369][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1470418][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1475467][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.37, error: 0.37}
+[1480529][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1485578][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1490627][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1495676][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1500725][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1505774][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1510823][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1515872][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1520921][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.30, error: 0.30}
+[1525970][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 32.24, error: 0.24}
+[1531019][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 31, input: 32.24, error: 0.24}
+[1536092][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 31, input: 32.24, error: 0.24}
+[1541142][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 41, input: 32.17, error: 0.17}
+[1546191][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 33, input: 32.17, error: 0.17}
+[1551240][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.24, error: 0.24}
+[1556289][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 41, input: 32.17, error: 0.17}
+[1561338][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 33, input: 32.17, error: 0.17}
+[1566387][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 33, input: 32.17, error: 0.17}
+[1571436][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 33, input: 32.17, error: 0.17}
+[1576485][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 33, input: 32.17, error: 0.17}
+[1581534][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 43, input: 32.10, error: 0.10}
+[1586603][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[1591652][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.17, error: 0.17}
+[1596701][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 43, input: 32.10, error: 0.10}
+[1601750][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[1606799][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[1611848][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 30, input: 32.10, error: 0.10}
+[1616897][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[1621946][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1626995][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1632044][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1637093][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1642171][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1647220][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1652269][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[1657318][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[1662367][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1667416][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1672465][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1677514][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1682563][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1687612][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1692672][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[1697721][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[1702770][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1707819][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1712868][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1717917][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1722966][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1728015][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1733064][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[1738113][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[1743162][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1748211][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1753288][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1758340][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1763389][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1768438][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1773487][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1778536][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.83, error: -0.17}
+[1783585][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 50, input: 31.76, error: -0.24}
+[1788634][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1793683][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1798746][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 31, input: 31.83, error: -0.17}
+[1803795][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 50, input: 31.76, error: -0.24}
+[1808844][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1813893][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1818942][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1823991][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1829040][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1834094][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1839143][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1844192][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1849241][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1854311][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1859361][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 31.76, error: -0.24}
+[1864410][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 52, input: 31.69, error: -0.31}
+[1869459][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1874508][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1879557][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1884606][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1889655][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1894704][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1899753][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1904823][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 31.69, error: -0.31}
+[1909872][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.62, error: -0.38}
+[1914921][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.62, error: -0.38}
+[1919970][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.62, error: -0.38}
+[1925019][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.62, error: -0.38}
+[1930068][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 36, input: 31.69, error: -0.31}
+[1935117][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.69, error: -0.31}
+[1940166][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.69, error: -0.31}
+[1945215][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.69, error: -0.31}
+[1950264][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.62, error: -0.38}
+[1955313][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 36, input: 31.69, error: -0.31}
+[1960362][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.62, error: -0.38}
+[1965436][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[1970485][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[1975534][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[1980583][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[1985632][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[1990681][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.69, error: -0.31}
+[1995730][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.69, error: -0.31}
+[2000779][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.69, error: -0.31}
+[2005828][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 56, input: 31.62, error: -0.38}
+[2010884][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.62, error: -0.38}
+[2015933][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2020982][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2026045][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2031094][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2036143][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2041192][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2046241][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2051290][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.69, error: -0.31}
+[2056339][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.62, error: -0.38}
+[2061409][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.62, error: -0.38}
+[2066488][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.69, error: -0.31}
+[2071537][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.62, error: -0.38}
+[2076586][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2081635][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2086684][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2091733][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2096782][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.69, error: -0.31}
+[2101831][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 31.62, error: -0.38}
+[2106880][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2111929][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2116978][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.62, error: -0.38}
+[2122027][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.69, error: -0.31}
+[2127076][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2132125][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2137174][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2142223][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 31.62, error: -0.38}
+[2147272][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.69, error: -0.31}
+[2152321][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2157370][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2162419][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.69, error: -0.31}
+[2167468][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2172547][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2177596][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 59, input: 31.62, error: -0.38}
+[2182645][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 40, input: 31.69, error: -0.31}
+[2187694][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2192743][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2197792][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2202841][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2207890][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2212939][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2217988][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.69, error: -0.31}
+[2223043][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.76, error: -0.24}
+[2228092][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 31.69, error: -0.31}
+[2233141][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.76, error: -0.24}
+[2238190][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2243239][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2248288][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2253346][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2258395][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2263444][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2268493][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2273542][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.76, error: -0.24}
+[2278615][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.83, error: -0.17}
+[2283665][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2288714][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2293763][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2298812][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2303861][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2308910][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.76, error: -0.24}
+[2313959][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 49, input: 31.76, error: -0.24}
+[2319008][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.83, error: -0.17}
+[2324057][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.83, error: -0.17}
+[2329129][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2334178][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2339227][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2344276][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 58, input: 31.76, error: -0.24}
+[2349325][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 39, input: 31.83, error: -0.17}
+[2354374][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2359423][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2364472][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2369521][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 48, input: 31.83, error: -0.17}
+[2374570][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[2379619][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 46, input: 31.89, error: -0.11}
+[2384668][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 57, input: 31.83, error: -0.17}
+[2389740][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 38, input: 31.89, error: -0.11}
+[2394789][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2399838][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 36, input: 31.96, error: -0.04}
+[2404901][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.89, error: -0.11}
+[2409950][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2414999][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2420048][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2425097][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[2430146][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 55, input: 31.89, error: -0.11}
+[2435195][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2440244][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2445293][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 47, input: 31.89, error: -0.11}
+[2450342][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[2455391][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2460440][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2465489][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 56, input: 31.89, error: -0.11}
+[2470538][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 37, input: 31.96, error: -0.04}
+[2475587][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2480662][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2485711][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2490786][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2495835][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 45, input: 31.96, error: -0.04}
+[2500884][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[2505933][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 40, fan: 54, input: 31.96, error: -0.04}
+[2510982][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 35, input: 32.03, error: 0.03}
+[2516031][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[2521080][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[2526129][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 43, input: 32.10, error: 0.10}
+[2531178][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 32.03, error: 0.03}
+[2536227][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[2541276][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[2546325][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 32.03, error: 0.03}
+[2551394][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[2556443][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[2561492][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[2566541][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 53, input: 32.03, error: 0.03}
+[2571590][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[2576639][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2581688][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2586737][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2591786][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2596838][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2601887][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2606936][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 30, fan: 52, input: 32.03, error: 0.03}
+[2611985][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 44, input: 32.03, error: 0.03}
+[2617034][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 34, input: 32.10, error: 0.10}
+[2622083][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2627132][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2632190][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2637239][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2642288][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2647337][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 20, fan: 42, input: 32.10, error: 0.10}
+[2652407][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 0, fan: 32, input: 32.17, error: 0.17}
+[2657457][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 41, input: 32.17, error: 0.17}
+[2662506][I][ASTRA_BabyIncubator.cpp:72] pidTask(): [Air Mode] {heater: 10, fan: 41, input: 32.17, error: 0.17}
